@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		87773A5F2691521800960867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87773A5D2691521800960867 /* Main.storyboard */; };
 		87773A612691521A00960867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87773A602691521A00960867 /* Assets.xcassets */; };
 		87773A642691521A00960867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87773A622691521A00960867 /* LaunchScreen.storyboard */; };
+		87773A6C2691596A00960867 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A6B2691596A00960867 /* AppCoordinator.swift */; };
+		87773A6F269159F700960867 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A6E269159F700960867 /* Coordinator.swift */; };
 		E5B2EB56B7D60A61318F8D51 /* Pods_WoopSicredi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358528ED3C9FB3D0927BAC1A /* Pods_WoopSicredi.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		87773A602691521A00960867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87773A632691521A00960867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87773A652691521A00960867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87773A6B2691596A00960867 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		87773A6E269159F700960867 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B28C090C3CE670F5A087E745 /* Pods-WoopSicredi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.debug.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.debug.xcconfig"; sourceTree = "<group>"; };
 		F3961C50ADD0BE69162932BE /* Pods-WoopSicredi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.release.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +67,7 @@
 		87773A562691521800960867 /* WoopSicredi */ = {
 			isa = PBXGroup;
 			children = (
+				87773A6D269159DD00960867 /* Extensions */,
 				87773A572691521800960867 /* AppDelegate.swift */,
 				87773A592691521800960867 /* SceneDelegate.swift */,
 				87773A5B2691521800960867 /* ViewController.swift */,
@@ -70,8 +75,17 @@
 				87773A602691521A00960867 /* Assets.xcassets */,
 				87773A622691521A00960867 /* LaunchScreen.storyboard */,
 				87773A652691521A00960867 /* Info.plist */,
+				87773A6B2691596A00960867 /* AppCoordinator.swift */,
 			);
 			path = WoopSicredi;
+			sourceTree = "<group>";
+		};
+		87773A6D269159DD00960867 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				87773A6E269159F700960867 /* Coordinator.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		AB91A372E67B65C2E9E34A73 /* Pods */ = {
@@ -80,7 +94,6 @@
 				B28C090C3CE670F5A087E745 /* Pods-WoopSicredi.debug.xcconfig */,
 				F3961C50ADD0BE69162932BE /* Pods-WoopSicredi.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,7 +219,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87773A6C2691596A00960867 /* AppCoordinator.swift in Sources */,
 				87773A5C2691521800960867 /* ViewController.swift in Sources */,
+				87773A6F269159F700960867 /* Coordinator.swift in Sources */,
 				87773A582691521800960867 /* AppDelegate.swift in Sources */,
 				87773A5A2691521800960867 /* SceneDelegate.swift in Sources */,
 			);

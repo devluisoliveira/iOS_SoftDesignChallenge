@@ -21,7 +21,6 @@ class WSFont {
             case .regular:
                 return UIFont.systemFont(ofSize: size)
             }
-            
         }
         
         func fontType() -> FontTypes {

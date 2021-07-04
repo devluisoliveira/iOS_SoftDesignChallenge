@@ -119,12 +119,12 @@
 		87773A562691521800960867 /* WoopSicredi */ = {
 			isa = PBXGroup;
 			children = (
-				87773A8826915D5100960867 /* Features */,
-				87773A7026915A9A00960867 /* Service */,
 				87773A6D269159DD00960867 /* Extensions */,
+				87773A7026915A9A00960867 /* Service */,
 				87773A8126915C7400960867 /* Resources */,
-				87773A592691521800960867 /* SceneDelegate.swift */,
+				87773A8826915D5100960867 /* Features */,
 				87773A572691521800960867 /* AppDelegate.swift */,
+				87773A592691521800960867 /* SceneDelegate.swift */,
 				87773A5B2691521800960867 /* ViewController.swift */,
 				87773A5D2691521800960867 /* Main.storyboard */,
 				87773A602691521A00960867 /* Assets.xcassets */,

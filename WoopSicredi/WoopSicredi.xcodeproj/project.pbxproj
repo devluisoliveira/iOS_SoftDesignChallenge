@@ -15,6 +15,14 @@
 		87773A642691521A00960867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87773A622691521A00960867 /* LaunchScreen.storyboard */; };
 		87773A6C2691596A00960867 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A6B2691596A00960867 /* AppCoordinator.swift */; };
 		87773A6F269159F700960867 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A6E269159F700960867 /* Coordinator.swift */; };
+		87773A7226915AB800960867 /* WoopNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7126915AB800960867 /* WoopNetworkService.swift */; };
+		87773A7426915ACA00960867 /* WoopRequestErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7326915ACA00960867 /* WoopRequestErrorModel.swift */; };
+		87773A7626915ADE00960867 /* WoopDataModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7526915ADE00960867 /* WoopDataModelProtocol.swift */; };
+		87773A7826915AF400960867 /* WoopRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7726915AF400960867 /* WoopRequestProtocol.swift */; };
+		87773A7A26915B5400960867 /* DataResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7926915B5400960867 /* DataResponseExtension.swift */; };
+		87773A7C26915B6300960867 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7B26915B6300960867 /* StringExtension.swift */; };
+		87773A7E26915B7500960867 /* WSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7D26915B7500960867 /* WSViewController.swift */; };
+		87773A8026915B8B00960867 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7F26915B8B00960867 /* DateExtension.swift */; };
 		E5B2EB56B7D60A61318F8D51 /* Pods_WoopSicredi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358528ED3C9FB3D0927BAC1A /* Pods_WoopSicredi.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +38,14 @@
 		87773A652691521A00960867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87773A6B2691596A00960867 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		87773A6E269159F700960867 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		87773A7126915AB800960867 /* WoopNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopNetworkService.swift; sourceTree = "<group>"; };
+		87773A7326915ACA00960867 /* WoopRequestErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopRequestErrorModel.swift; sourceTree = "<group>"; };
+		87773A7526915ADE00960867 /* WoopDataModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopDataModelProtocol.swift; sourceTree = "<group>"; };
+		87773A7726915AF400960867 /* WoopRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopRequestProtocol.swift; sourceTree = "<group>"; };
+		87773A7926915B5400960867 /* DataResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseExtension.swift; sourceTree = "<group>"; };
+		87773A7B26915B6300960867 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		87773A7D26915B7500960867 /* WSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSViewController.swift; sourceTree = "<group>"; };
+		87773A7F26915B8B00960867 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		B28C090C3CE670F5A087E745 /* Pods-WoopSicredi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.debug.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.debug.xcconfig"; sourceTree = "<group>"; };
 		F3961C50ADD0BE69162932BE /* Pods-WoopSicredi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.release.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,6 +83,7 @@
 		87773A562691521800960867 /* WoopSicredi */ = {
 			isa = PBXGroup;
 			children = (
+				87773A7026915A9A00960867 /* Service */,
 				87773A6D269159DD00960867 /* Extensions */,
 				87773A572691521800960867 /* AppDelegate.swift */,
 				87773A592691521800960867 /* SceneDelegate.swift */,
@@ -84,8 +101,23 @@
 			isa = PBXGroup;
 			children = (
 				87773A6E269159F700960867 /* Coordinator.swift */,
+				87773A7926915B5400960867 /* DataResponseExtension.swift */,
+				87773A7B26915B6300960867 /* StringExtension.swift */,
+				87773A7D26915B7500960867 /* WSViewController.swift */,
+				87773A7F26915B8B00960867 /* DateExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87773A7026915A9A00960867 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				87773A7126915AB800960867 /* WoopNetworkService.swift */,
+				87773A7326915ACA00960867 /* WoopRequestErrorModel.swift */,
+				87773A7526915ADE00960867 /* WoopDataModelProtocol.swift */,
+				87773A7726915AF400960867 /* WoopRequestProtocol.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		AB91A372E67B65C2E9E34A73 /* Pods */ = {
@@ -219,11 +251,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87773A7626915ADE00960867 /* WoopDataModelProtocol.swift in Sources */,
 				87773A6C2691596A00960867 /* AppCoordinator.swift in Sources */,
+				87773A7A26915B5400960867 /* DataResponseExtension.swift in Sources */,
+				87773A7826915AF400960867 /* WoopRequestProtocol.swift in Sources */,
 				87773A5C2691521800960867 /* ViewController.swift in Sources */,
+				87773A8026915B8B00960867 /* DateExtension.swift in Sources */,
 				87773A6F269159F700960867 /* Coordinator.swift in Sources */,
+				87773A7E26915B7500960867 /* WSViewController.swift in Sources */,
 				87773A582691521800960867 /* AppDelegate.swift in Sources */,
 				87773A5A2691521800960867 /* SceneDelegate.swift in Sources */,
+				87773A7226915AB800960867 /* WoopNetworkService.swift in Sources */,
+				87773A7C26915B6300960867 /* StringExtension.swift in Sources */,
+				87773A7426915ACA00960867 /* WoopRequestErrorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

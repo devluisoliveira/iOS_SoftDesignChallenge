@@ -13,9 +13,11 @@
 		87773A5F2691521800960867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87773A5D2691521800960867 /* Main.storyboard */; };
 		87773A612691521A00960867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87773A602691521A00960867 /* Assets.xcassets */; };
 		87773A642691521A00960867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87773A622691521A00960867 /* LaunchScreen.storyboard */; };
+		E5B2EB56B7D60A61318F8D51 /* Pods_WoopSicredi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358528ED3C9FB3D0927BAC1A /* Pods_WoopSicredi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		358528ED3C9FB3D0927BAC1A /* Pods_WoopSicredi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopSicredi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87773A542691521800960867 /* WoopSicredi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoopSicredi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87773A572691521800960867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87773A592691521800960867 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		87773A602691521A00960867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87773A632691521A00960867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87773A652691521A00960867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B28C090C3CE670F5A087E745 /* Pods-WoopSicredi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.debug.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.debug.xcconfig"; sourceTree = "<group>"; };
+		F3961C50ADD0BE69162932BE /* Pods-WoopSicredi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.release.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5B2EB56B7D60A61318F8D51 /* Pods_WoopSicredi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				87773A562691521800960867 /* WoopSicredi */,
 				87773A552691521800960867 /* Products */,
+				AB91A372E67B65C2E9E34A73 /* Pods */,
+				D87D21D4A12ECB7F9A43CFF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = WoopSicredi;
 			sourceTree = "<group>";
 		};
+		AB91A372E67B65C2E9E34A73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B28C090C3CE670F5A087E745 /* Pods-WoopSicredi.debug.xcconfig */,
+				F3961C50ADD0BE69162932BE /* Pods-WoopSicredi.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D87D21D4A12ECB7F9A43CFF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				358528ED3C9FB3D0927BAC1A /* Pods_WoopSicredi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 87773A682691521A00960867 /* Build configuration list for PBXNativeTarget "WoopSicredi" */;
 			buildPhases = (
+				E3878F2A4D25D4A58EE4CEC5 /* [CP] Check Pods Manifest.lock */,
 				87773A502691521800960867 /* Sources */,
 				87773A512691521800960867 /* Frameworks */,
 				87773A522691521800960867 /* Resources */,
+				D138CBD19107D368BF2955A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D138CBD19107D368BF2955A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3878F2A4D25D4A58EE4CEC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoopSicredi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		87773A502691521800960867 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		87773A692691521A00960867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28C090C3CE670F5A087E745 /* Pods-WoopSicredi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		87773A6A2691521A00960867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3961C50ADD0BE69162932BE /* Pods-WoopSicredi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

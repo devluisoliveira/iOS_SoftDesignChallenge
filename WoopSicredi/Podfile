@@ -6,7 +6,7 @@ target 'WoopSicredi' do
   use_frameworks!
 
   # Pods for WoopSicredi
-	pod 'Alamofire'
+	pod 'Alamofire', '~> 4.0'
   	pod 'SwiftyJSON'
   	pod 'Kingfisher'
 end

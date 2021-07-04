@@ -26,6 +26,21 @@
 		87773A8326915CA600960867 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A8226915CA600960867 /* Money.swift */; };
 		87773A8526915CB500960867 /* WSColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A8426915CB500960867 /* WSColorPalette.swift */; };
 		87773A8726915CC900960867 /* WSFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A8626915CC900960867 /* WSFont.swift */; };
+		87773A9226915E5600960867 /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9126915E5600960867 /* EventsService.swift */; };
+		87773A9426915E6500960867 /* FetchEventsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9326915E6500960867 /* FetchEventsResponse.swift */; };
+		87773A9626915E7400960867 /* FetchEventDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9526915E7400960867 /* FetchEventDetailsResponse.swift */; };
+		87773A9826915E8100960867 /* SendEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9726915E8100960867 /* SendEventRequest.swift */; };
+		87773A9A26915E9100960867 /* EventsServiceMOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9926915E9100960867 /* EventsServiceMOCK.swift */; };
+		87773A9C26915F3400960867 /* EventsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9B26915F3400960867 /* EventsListVC.swift */; };
+		87773A9E26915F4700960867 /* EventsListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9D26915F4700960867 /* EventsListVM.swift */; };
+		87773AA026915F5600960867 /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9F26915F5600960867 /* EventDetailVC.swift */; };
+		87773AA226915F6300960867 /* EventDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AA126915F6300960867 /* EventDetailVM.swift */; };
+		87773AA426915F7100960867 /* CheckInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AA326915F7100960867 /* CheckInVC.swift */; };
+		87773AA626915F8000960867 /* CheckInVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AA526915F8000960867 /* CheckInVM.swift */; };
+		87773AA826915F9100960867 /* LoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AA726915F9100960867 /* LoaderVC.swift */; };
+		87773AAA26915FA000960867 /* EventsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AA926915FA000960867 /* EventsListTableViewCell.swift */; };
+		87773AAC26915FAD00960867 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AAB26915FAD00960867 /* AlertVC.swift */; };
+		87773AAE269160B700960867 /* EventsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AAD269160B700960867 /* EventsCoordinator.swift */; };
 		E5B2EB56B7D60A61318F8D51 /* Pods_WoopSicredi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358528ED3C9FB3D0927BAC1A /* Pods_WoopSicredi.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +67,21 @@
 		87773A8226915CA600960867 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		87773A8426915CB500960867 /* WSColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSColorPalette.swift; sourceTree = "<group>"; };
 		87773A8626915CC900960867 /* WSFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFont.swift; sourceTree = "<group>"; };
+		87773A9126915E5600960867 /* EventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
+		87773A9326915E6500960867 /* FetchEventsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEventsResponse.swift; sourceTree = "<group>"; };
+		87773A9526915E7400960867 /* FetchEventDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEventDetailsResponse.swift; sourceTree = "<group>"; };
+		87773A9726915E8100960867 /* SendEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEventRequest.swift; sourceTree = "<group>"; };
+		87773A9926915E9100960867 /* EventsServiceMOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsServiceMOCK.swift; sourceTree = "<group>"; };
+		87773A9B26915F3400960867 /* EventsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListVC.swift; sourceTree = "<group>"; };
+		87773A9D26915F4700960867 /* EventsListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListVM.swift; sourceTree = "<group>"; };
+		87773A9F26915F5600960867 /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
+		87773AA126915F6300960867 /* EventDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVM.swift; sourceTree = "<group>"; };
+		87773AA326915F7100960867 /* CheckInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVC.swift; sourceTree = "<group>"; };
+		87773AA526915F8000960867 /* CheckInVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVM.swift; sourceTree = "<group>"; };
+		87773AA726915F9100960867 /* LoaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderVC.swift; sourceTree = "<group>"; };
+		87773AA926915FA000960867 /* EventsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListTableViewCell.swift; sourceTree = "<group>"; };
+		87773AAB26915FAD00960867 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		87773AAD269160B700960867 /* EventsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCoordinator.swift; sourceTree = "<group>"; };
 		B28C090C3CE670F5A087E745 /* Pods-WoopSicredi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.debug.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.debug.xcconfig"; sourceTree = "<group>"; };
 		F3961C50ADD0BE69162932BE /* Pods-WoopSicredi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.release.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +119,7 @@
 		87773A562691521800960867 /* WoopSicredi */ = {
 			isa = PBXGroup;
 			children = (
+				87773A8826915D5100960867 /* Features */,
 				87773A7026915A9A00960867 /* Service */,
 				87773A6D269159DD00960867 /* Extensions */,
 				87773A8126915C7400960867 /* Resources */,
@@ -135,6 +166,60 @@
 				87773A8626915CC900960867 /* WSFont.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		87773A8826915D5100960867 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				87773A8926915DEA00960867 /* Events */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		87773A8926915DEA00960867 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				87773A8A26915DF500960867 /* Service */,
+				87773A8B26915E0700960867 /* UI */,
+				87773A8C26915E0F00960867 /* Navigation */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		87773A8A26915DF500960867 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				87773A9126915E5600960867 /* EventsService.swift */,
+				87773A9326915E6500960867 /* FetchEventsResponse.swift */,
+				87773A9526915E7400960867 /* FetchEventDetailsResponse.swift */,
+				87773A9726915E8100960867 /* SendEventRequest.swift */,
+				87773A9926915E9100960867 /* EventsServiceMOCK.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		87773A8B26915E0700960867 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				87773A9B26915F3400960867 /* EventsListVC.swift */,
+				87773A9D26915F4700960867 /* EventsListVM.swift */,
+				87773A9F26915F5600960867 /* EventDetailVC.swift */,
+				87773AA126915F6300960867 /* EventDetailVM.swift */,
+				87773AA326915F7100960867 /* CheckInVC.swift */,
+				87773AA526915F8000960867 /* CheckInVM.swift */,
+				87773AA726915F9100960867 /* LoaderVC.swift */,
+				87773AA926915FA000960867 /* EventsListTableViewCell.swift */,
+				87773AAB26915FAD00960867 /* AlertVC.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		87773A8C26915E0F00960867 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				87773AAD269160B700960867 /* EventsCoordinator.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		AB91A372E67B65C2E9E34A73 /* Pods */ = {
@@ -270,19 +355,34 @@
 			files = (
 				87773A7626915ADE00960867 /* WoopDataModelProtocol.swift in Sources */,
 				87773A6C2691596A00960867 /* AppCoordinator.swift in Sources */,
+				87773A9A26915E9100960867 /* EventsServiceMOCK.swift in Sources */,
+				87773AAC26915FAD00960867 /* AlertVC.swift in Sources */,
 				87773A8326915CA600960867 /* Money.swift in Sources */,
 				87773A7A26915B5400960867 /* DataResponseExtension.swift in Sources */,
+				87773AA826915F9100960867 /* LoaderVC.swift in Sources */,
 				87773A7826915AF400960867 /* WoopRequestProtocol.swift in Sources */,
 				87773A5C2691521800960867 /* ViewController.swift in Sources */,
 				87773A8026915B8B00960867 /* DateExtension.swift in Sources */,
 				87773A6F269159F700960867 /* Coordinator.swift in Sources */,
 				87773A8726915CC900960867 /* WSFont.swift in Sources */,
+				87773AA626915F8000960867 /* CheckInVM.swift in Sources */,
 				87773A7E26915B7500960867 /* WSViewController.swift in Sources */,
+				87773A9E26915F4700960867 /* EventsListVM.swift in Sources */,
+				87773AA226915F6300960867 /* EventDetailVM.swift in Sources */,
+				87773AA026915F5600960867 /* EventDetailVC.swift in Sources */,
+				87773A9826915E8100960867 /* SendEventRequest.swift in Sources */,
+				87773A9426915E6500960867 /* FetchEventsResponse.swift in Sources */,
+				87773A9226915E5600960867 /* EventsService.swift in Sources */,
 				87773A582691521800960867 /* AppDelegate.swift in Sources */,
+				87773A9626915E7400960867 /* FetchEventDetailsResponse.swift in Sources */,
 				87773A5A2691521800960867 /* SceneDelegate.swift in Sources */,
+				87773A9C26915F3400960867 /* EventsListVC.swift in Sources */,
 				87773A7226915AB800960867 /* WoopNetworkService.swift in Sources */,
 				87773A7C26915B6300960867 /* StringExtension.swift in Sources */,
 				87773A7426915ACA00960867 /* WoopRequestErrorModel.swift in Sources */,
+				87773AAA26915FA000960867 /* EventsListTableViewCell.swift in Sources */,
+				87773AAE269160B700960867 /* EventsCoordinator.swift in Sources */,
+				87773AA426915F7100960867 /* CheckInVC.swift in Sources */,
 				87773A8526915CB500960867 /* WSColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

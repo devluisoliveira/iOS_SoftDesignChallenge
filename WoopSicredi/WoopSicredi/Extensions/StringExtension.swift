@@ -24,4 +24,3 @@ extension String {
         return emailTest.evaluate(with: self)
     }
 }
-

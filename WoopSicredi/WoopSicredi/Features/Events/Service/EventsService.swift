@@ -10,8 +10,8 @@ import Alamofire
 
 class EventsService : WoopNetworkService, EventsListVMDataProvider, EventDetailVMDataProvider, CheckInVMDataProvider {
     
-    let eventsPath = "events"
-    let checkInPath = "checkin"
+    let eventsPath = "/events"
+    let checkInPath = "/checkin"
     
     func fetchEvents(completion: @escaping (WoopRequestErrorModel?, FetchEventsResponse?) -> Void) {
         super.requestJson("\(apiURL + eventsPath)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil) { (error, data) in

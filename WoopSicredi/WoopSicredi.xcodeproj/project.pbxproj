@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87773A582691521800960867 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A572691521800960867 /* AppDelegate.swift */; };
+		87773A5A2691521800960867 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A592691521800960867 /* SceneDelegate.swift */; };
+		87773A5C2691521800960867 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A5B2691521800960867 /* ViewController.swift */; };
+		87773A5F2691521800960867 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87773A5D2691521800960867 /* Main.storyboard */; };
+		87773A612691521A00960867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87773A602691521A00960867 /* Assets.xcassets */; };
+		87773A642691521A00960867 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87773A622691521A00960867 /* LaunchScreen.storyboard */; };
+		87773A6C2691596A00960867 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A6B2691596A00960867 /* AppCoordinator.swift */; };
+		87773A6F269159F700960867 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A6E269159F700960867 /* Coordinator.swift */; };
+		87773A7226915AB800960867 /* WoopNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7126915AB800960867 /* WoopNetworkService.swift */; };
+		87773A7426915ACA00960867 /* WoopRequestErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7326915ACA00960867 /* WoopRequestErrorModel.swift */; };
+		87773A7626915ADE00960867 /* WoopDataModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7526915ADE00960867 /* WoopDataModelProtocol.swift */; };
+		87773A7826915AF400960867 /* WoopRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7726915AF400960867 /* WoopRequestProtocol.swift */; };
+		87773A7A26915B5400960867 /* DataResponseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7926915B5400960867 /* DataResponseExtension.swift */; };
+		87773A7C26915B6300960867 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7B26915B6300960867 /* StringExtension.swift */; };
+		87773A7E26915B7500960867 /* WSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7D26915B7500960867 /* WSViewController.swift */; };
+		87773A8026915B8B00960867 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A7F26915B8B00960867 /* DateExtension.swift */; };
+		87773A8326915CA600960867 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A8226915CA600960867 /* Money.swift */; };
+		87773A8526915CB500960867 /* WSColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A8426915CB500960867 /* WSColorPalette.swift */; };
+		87773A8726915CC900960867 /* WSFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A8626915CC900960867 /* WSFont.swift */; };
+		87773A9226915E5600960867 /* EventsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9126915E5600960867 /* EventsService.swift */; };
+		87773A9426915E6500960867 /* FetchEventsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9326915E6500960867 /* FetchEventsResponse.swift */; };
+		87773A9626915E7400960867 /* FetchEventDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9526915E7400960867 /* FetchEventDetailsResponse.swift */; };
+		87773A9826915E8100960867 /* SendEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9726915E8100960867 /* SendEventRequest.swift */; };
+		87773A9A26915E9100960867 /* EventsServiceMOCK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9926915E9100960867 /* EventsServiceMOCK.swift */; };
+		87773A9C26915F3400960867 /* EventsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9B26915F3400960867 /* EventsListVC.swift */; };
+		87773A9E26915F4700960867 /* EventsListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9D26915F4700960867 /* EventsListVM.swift */; };
+		87773AA026915F5600960867 /* EventDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773A9F26915F5600960867 /* EventDetailVC.swift */; };
+		87773AA226915F6300960867 /* EventDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AA126915F6300960867 /* EventDetailVM.swift */; };
+		87773AA426915F7100960867 /* CheckInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AA326915F7100960867 /* CheckInVC.swift */; };
+		87773AA626915F8000960867 /* CheckInVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AA526915F8000960867 /* CheckInVM.swift */; };
+		87773AA826915F9100960867 /* LoaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AA726915F9100960867 /* LoaderVC.swift */; };
+		87773AAA26915FA000960867 /* EventsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AA926915FA000960867 /* EventsListTableViewCell.swift */; };
+		87773AAC26915FAD00960867 /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AAB26915FAD00960867 /* AlertVC.swift */; };
+		87773AAE269160B700960867 /* EventsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87773AAD269160B700960867 /* EventsCoordinator.swift */; };
+		E5B2EB56B7D60A61318F8D51 /* Pods_WoopSicredi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 358528ED3C9FB3D0927BAC1A /* Pods_WoopSicredi.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		358528ED3C9FB3D0927BAC1A /* Pods_WoopSicredi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WoopSicredi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87773A542691521800960867 /* WoopSicredi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoopSicredi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87773A572691521800960867 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		87773A592691521800960867 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		87773A5B2691521800960867 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		87773A5E2691521800960867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87773A602691521A00960867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87773A632691521A00960867 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		87773A652691521A00960867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87773A6B2691596A00960867 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		87773A6E269159F700960867 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		87773A7126915AB800960867 /* WoopNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopNetworkService.swift; sourceTree = "<group>"; };
+		87773A7326915ACA00960867 /* WoopRequestErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopRequestErrorModel.swift; sourceTree = "<group>"; };
+		87773A7526915ADE00960867 /* WoopDataModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopDataModelProtocol.swift; sourceTree = "<group>"; };
+		87773A7726915AF400960867 /* WoopRequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoopRequestProtocol.swift; sourceTree = "<group>"; };
+		87773A7926915B5400960867 /* DataResponseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponseExtension.swift; sourceTree = "<group>"; };
+		87773A7B26915B6300960867 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		87773A7D26915B7500960867 /* WSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSViewController.swift; sourceTree = "<group>"; };
+		87773A7F26915B8B00960867 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		87773A8226915CA600960867 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		87773A8426915CB500960867 /* WSColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSColorPalette.swift; sourceTree = "<group>"; };
+		87773A8626915CC900960867 /* WSFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WSFont.swift; sourceTree = "<group>"; };
+		87773A9126915E5600960867 /* EventsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsService.swift; sourceTree = "<group>"; };
+		87773A9326915E6500960867 /* FetchEventsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEventsResponse.swift; sourceTree = "<group>"; };
+		87773A9526915E7400960867 /* FetchEventDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEventDetailsResponse.swift; sourceTree = "<group>"; };
+		87773A9726915E8100960867 /* SendEventRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEventRequest.swift; sourceTree = "<group>"; };
+		87773A9926915E9100960867 /* EventsServiceMOCK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsServiceMOCK.swift; sourceTree = "<group>"; };
+		87773A9B26915F3400960867 /* EventsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListVC.swift; sourceTree = "<group>"; };
+		87773A9D26915F4700960867 /* EventsListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListVM.swift; sourceTree = "<group>"; };
+		87773A9F26915F5600960867 /* EventDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVC.swift; sourceTree = "<group>"; };
+		87773AA126915F6300960867 /* EventDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailVM.swift; sourceTree = "<group>"; };
+		87773AA326915F7100960867 /* CheckInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVC.swift; sourceTree = "<group>"; };
+		87773AA526915F8000960867 /* CheckInVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInVM.swift; sourceTree = "<group>"; };
+		87773AA726915F9100960867 /* LoaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderVC.swift; sourceTree = "<group>"; };
+		87773AA926915FA000960867 /* EventsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsListTableViewCell.swift; sourceTree = "<group>"; };
+		87773AAB26915FAD00960867 /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		87773AAD269160B700960867 /* EventsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCoordinator.swift; sourceTree = "<group>"; };
+		B28C090C3CE670F5A087E745 /* Pods-WoopSicredi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.debug.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.debug.xcconfig"; sourceTree = "<group>"; };
+		F3961C50ADD0BE69162932BE /* Pods-WoopSicredi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WoopSicredi.release.xcconfig"; path = "Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87773A512691521800960867 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B2EB56B7D60A61318F8D51 /* Pods_WoopSicredi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87773A4B2691521700960867 = {
+			isa = PBXGroup;
+			children = (
+				87773A562691521800960867 /* WoopSicredi */,
+				87773A552691521800960867 /* Products */,
+				AB91A372E67B65C2E9E34A73 /* Pods */,
+				D87D21D4A12ECB7F9A43CFF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87773A552691521800960867 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87773A542691521800960867 /* WoopSicredi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87773A562691521800960867 /* WoopSicredi */ = {
+			isa = PBXGroup;
+			children = (
+				87773A6D269159DD00960867 /* Extensions */,
+				87773A7026915A9A00960867 /* Service */,
+				87773A8126915C7400960867 /* Resources */,
+				87773A8826915D5100960867 /* Features */,
+				87773A572691521800960867 /* AppDelegate.swift */,
+				87773A592691521800960867 /* SceneDelegate.swift */,
+				87773A5B2691521800960867 /* ViewController.swift */,
+				87773A5D2691521800960867 /* Main.storyboard */,
+				87773A602691521A00960867 /* Assets.xcassets */,
+				87773A622691521A00960867 /* LaunchScreen.storyboard */,
+				87773A652691521A00960867 /* Info.plist */,
+				87773A6B2691596A00960867 /* AppCoordinator.swift */,
+			);
+			path = WoopSicredi;
+			sourceTree = "<group>";
+		};
+		87773A6D269159DD00960867 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				87773A6E269159F700960867 /* Coordinator.swift */,
+				87773A7926915B5400960867 /* DataResponseExtension.swift */,
+				87773A7B26915B6300960867 /* StringExtension.swift */,
+				87773A7D26915B7500960867 /* WSViewController.swift */,
+				87773A7F26915B8B00960867 /* DateExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		87773A7026915A9A00960867 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				87773A7126915AB800960867 /* WoopNetworkService.swift */,
+				87773A7326915ACA00960867 /* WoopRequestErrorModel.swift */,
+				87773A7526915ADE00960867 /* WoopDataModelProtocol.swift */,
+				87773A7726915AF400960867 /* WoopRequestProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		87773A8126915C7400960867 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87773A8226915CA600960867 /* Money.swift */,
+				87773A8426915CB500960867 /* WSColorPalette.swift */,
+				87773A8626915CC900960867 /* WSFont.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87773A8826915D5100960867 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				87773A8926915DEA00960867 /* Events */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		87773A8926915DEA00960867 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				87773A8A26915DF500960867 /* Service */,
+				87773A8B26915E0700960867 /* UI */,
+				87773A8C26915E0F00960867 /* Navigation */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		87773A8A26915DF500960867 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				87773A9126915E5600960867 /* EventsService.swift */,
+				87773A9326915E6500960867 /* FetchEventsResponse.swift */,
+				87773A9526915E7400960867 /* FetchEventDetailsResponse.swift */,
+				87773A9726915E8100960867 /* SendEventRequest.swift */,
+				87773A9926915E9100960867 /* EventsServiceMOCK.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		87773A8B26915E0700960867 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				87773A9B26915F3400960867 /* EventsListVC.swift */,
+				87773A9D26915F4700960867 /* EventsListVM.swift */,
+				87773A9F26915F5600960867 /* EventDetailVC.swift */,
+				87773AA126915F6300960867 /* EventDetailVM.swift */,
+				87773AA326915F7100960867 /* CheckInVC.swift */,
+				87773AA526915F8000960867 /* CheckInVM.swift */,
+				87773AA726915F9100960867 /* LoaderVC.swift */,
+				87773AA926915FA000960867 /* EventsListTableViewCell.swift */,
+				87773AAB26915FAD00960867 /* AlertVC.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		87773A8C26915E0F00960867 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				87773AAD269160B700960867 /* EventsCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		AB91A372E67B65C2E9E34A73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B28C090C3CE670F5A087E745 /* Pods-WoopSicredi.debug.xcconfig */,
+				F3961C50ADD0BE69162932BE /* Pods-WoopSicredi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D87D21D4A12ECB7F9A43CFF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				358528ED3C9FB3D0927BAC1A /* Pods_WoopSicredi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87773A532691521800960867 /* WoopSicredi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87773A682691521A00960867 /* Build configuration list for PBXNativeTarget "WoopSicredi" */;
+			buildPhases = (
+				E3878F2A4D25D4A58EE4CEC5 /* [CP] Check Pods Manifest.lock */,
+				87773A502691521800960867 /* Sources */,
+				87773A512691521800960867 /* Frameworks */,
+				87773A522691521800960867 /* Resources */,
+				D138CBD19107D368BF2955A9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WoopSicredi;
+			productName = WoopSicredi;
+			productReference = 87773A542691521800960867 /* WoopSicredi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87773A4C2691521700960867 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					87773A532691521800960867 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 87773A4F2691521700960867 /* Build configuration list for PBXProject "WoopSicredi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87773A4B2691521700960867;
+			productRefGroup = 87773A552691521800960867 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87773A532691521800960867 /* WoopSicredi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87773A522691521800960867 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87773A642691521A00960867 /* LaunchScreen.storyboard in Resources */,
+				87773A612691521A00960867 /* Assets.xcassets in Resources */,
+				87773A5F2691521800960867 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D138CBD19107D368BF2955A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WoopSicredi/Pods-WoopSicredi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3878F2A4D25D4A58EE4CEC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WoopSicredi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87773A502691521800960867 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87773A7626915ADE00960867 /* WoopDataModelProtocol.swift in Sources */,
+				87773A6C2691596A00960867 /* AppCoordinator.swift in Sources */,
+				87773A9A26915E9100960867 /* EventsServiceMOCK.swift in Sources */,
+				87773AAC26915FAD00960867 /* AlertVC.swift in Sources */,
+				87773A8326915CA600960867 /* Money.swift in Sources */,
+				87773A7A26915B5400960867 /* DataResponseExtension.swift in Sources */,
+				87773AA826915F9100960867 /* LoaderVC.swift in Sources */,
+				87773A7826915AF400960867 /* WoopRequestProtocol.swift in Sources */,
+				87773A5C2691521800960867 /* ViewController.swift in Sources */,
+				87773A8026915B8B00960867 /* DateExtension.swift in Sources */,
+				87773A6F269159F700960867 /* Coordinator.swift in Sources */,
+				87773A8726915CC900960867 /* WSFont.swift in Sources */,
+				87773AA626915F8000960867 /* CheckInVM.swift in Sources */,
+				87773A7E26915B7500960867 /* WSViewController.swift in Sources */,
+				87773A9E26915F4700960867 /* EventsListVM.swift in Sources */,
+				87773AA226915F6300960867 /* EventDetailVM.swift in Sources */,
+				87773AA026915F5600960867 /* EventDetailVC.swift in Sources */,
+				87773A9826915E8100960867 /* SendEventRequest.swift in Sources */,
+				87773A9426915E6500960867 /* FetchEventsResponse.swift in Sources */,
+				87773A9226915E5600960867 /* EventsService.swift in Sources */,
+				87773A582691521800960867 /* AppDelegate.swift in Sources */,
+				87773A9626915E7400960867 /* FetchEventDetailsResponse.swift in Sources */,
+				87773A5A2691521800960867 /* SceneDelegate.swift in Sources */,
+				87773A9C26915F3400960867 /* EventsListVC.swift in Sources */,
+				87773A7226915AB800960867 /* WoopNetworkService.swift in Sources */,
+				87773A7C26915B6300960867 /* StringExtension.swift in Sources */,
+				87773A7426915ACA00960867 /* WoopRequestErrorModel.swift in Sources */,
+				87773AAA26915FA000960867 /* EventsListTableViewCell.swift in Sources */,
+				87773AAE269160B700960867 /* EventsCoordinator.swift in Sources */,
+				87773AA426915F7100960867 /* CheckInVC.swift in Sources */,
+				87773A8526915CB500960867 /* WSColorPalette.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		87773A5D2691521800960867 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87773A5E2691521800960867 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		87773A622691521A00960867 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87773A632691521A00960867 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87773A662691521A00960867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87773A672691521A00960867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87773A692691521A00960867 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28C090C3CE670F5A087E745 /* Pods-WoopSicredi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WoopSicredi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DevLuis.WoopSicredi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87773A6A2691521A00960867 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3961C50ADD0BE69162932BE /* Pods-WoopSicredi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WoopSicredi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = DevLuis.WoopSicredi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87773A4F2691521700960867 /* Build configuration list for PBXProject "WoopSicredi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87773A662691521A00960867 /* Debug */,
+				87773A672691521A00960867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87773A682691521A00960867 /* Build configuration list for PBXNativeTarget "WoopSicredi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87773A692691521A00960867 /* Debug */,
+				87773A6A2691521A00960867 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87773A4C2691521700960867 /* Project object */;
+}
